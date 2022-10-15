@@ -37,13 +37,13 @@ const name = props.frName;
 };
 
 const Product = (props) =>{
-  let {names, prices} = props.proName;
-  // console.log(names, prices);
-  // console.log(props.proName.name);
+  let {price, name} = props.proName;
+  console.log(name, price);
+  console.log(props.proName);
   return (
     <div style={{border : '1px solid #101036', height : '200px', width: '400px', padding : '10px', margin : '10px auto', textAlign : 'center'}}>
-      <h2>Produt Name :{names}</h2>
-      <h3>Product Price : {prices}</h3>
+      <h2>Produt Name :{name}</h2>
+      <h3>Product Price : {price}</h3>
     </div>
   )
 }
